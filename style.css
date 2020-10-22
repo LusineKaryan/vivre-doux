@@ -1,4 +1,12 @@
 body{
-   
-    
+
+    .container {
+        width: 100%;
+        max-width: 1440px;
+        max-height: 342px;
+        padding: 0 50px;
+        margin: 0 auto;
+      }
 }
+
+    
