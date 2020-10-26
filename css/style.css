@@ -1,12 +1,15 @@
 body{
   margin: 0;
   padding: 0;
+  background-image: url(../images/fond1.jpg);
+  background-size: cover;
  }  
  
  #logo {
-   width: 250px;
+   width: 200px;
    height: auto;
    margin-left: 40px;
+   padding: 0px;
  }
  
  nav {
@@ -28,7 +31,7 @@ body{
    background-color:#EFE7ED;
    border: 1px solid #807E7E;
    text-align: center;
- 
+   
  }
  #bandeau {
    background-image: url(../images/image3.jpg);
@@ -36,18 +39,15 @@ body{
    background-size: cover;
    display: flex;
    align-items: flex-end;
- }
+}
  
  main {
      display: flex;
      flex-direction: row;
+     flex-flow: wrap;
      justify-content: space-around;
    }
  
- aside{
-   padding: 10px;
-   width: 378px;float: left;
- }
  article {
    display: flex;
    flex-direction: column;
@@ -55,19 +55,20 @@ body{
    margin-top: 50px;
    margin-left: 25px;
    margin-right: 25px;
-   padding: 10px;
-   width: 33%;
-   border: 5px solid #F5DCDF;
+   padding: 25px;
+   width: 25%;
+   border: 2px solid #A97C9F;
  }
- #gateau1, #gateau2, #gateau3 {
-   width:60%;
- } 
+ #gateau1, #gateau2, #gateau3, #gateau4, #gateau5{
+   width:70%;
+ }
+ 
  a{
    color:black;
    text-decoration: none;
  }
  a:visited{
-   color: red;
+   color: rgb(173, 36, 148);
  }
  
  footer {
