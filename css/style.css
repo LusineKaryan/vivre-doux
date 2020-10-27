@@ -78,7 +78,7 @@ body{
   border: none;
   cursor: pointer;
   padding:20px;
-  margin-top:20px;
+  margin-bottom:240px;
 }
 
 .mainmenubtn:hover {
@@ -87,7 +87,7 @@ body{
   
 .dropdown {
   position: relative;
-  display: inline;
+  display: inline-block;
 }
 .dropdown-child {
   display: none;
@@ -111,16 +111,16 @@ body{
    padding:20px;
  }
 
- @media screen and (max-width: 450px) 
+ @media screen and (max-width: 414px) 
  {
    article
    {
-     width: 50%;
+     width: 60%;
    }
    
  }
 
-@media screen and (min-width: 400px) and (max-width: 1200px) 
+@media screen and (min-width: 414px) and (max-width: 1000px) 
 {
   article
  {
