@@ -5,32 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <link href="css/style.css" rel="stylesheet" />
     <title>Vivre-doux</title>
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 </head>
 <body>
     <header>
         <img id="logo" src="images/logo3.png" alt="logo">
         <div id="bandeau">
-           <div class="dropdown">
-                <button class="mainmenubtn">MENU</button>
-                <div class="dropdown-child">
-                  <a href="#">Mariage</a>
-                  <a href="#">Anniversaire</a>
-                  <a href="#">Enfants</a>
-                  <a href="#">Macarones</a>
-                  <a href="#">Gateaux</a>
-                </div>
-            </div> 
-            <nav>
+            <nav class="dws-menu">
                 <ul>
-                    <li><a href="#">Accueil</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Panier</a></li>
+                    <li><a href="#"><i class="fas fa-fw fa-home"></i>Accueil</a></li>
+                    <li><a href="#"><i class="fas fa-fw fa-briefcase"></i>Assortiment</a>
+                        <ul class="menu">
+                            <li><a href="#">Mariage</a></li>
+                            <li><a href="#">Anniversaire</a></li>
+                            <li><a href="#">Enfants</a></li>
+                            <li><a href="#">Macarones</a></li>
+                            <li><a href="#">Gateaux</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><i class="fas fa-fw fa-map-marker"></i>Contact</a></li>
+                    <li><a href="#"><i class="fas fa-fw fa-gift"></i>"></i>Panier</a></li>
                 </ul>
-            </nav>
-            
-        </div>      
-    </header>
-    <main>     
+            </nav>     
+        </div>
+    </header>    
+    <main id="about" class="about">     
         <article>
             <img id="gateau1" src="images/tort1.jpg" alt="gateau1">
             <p>Des gâteaux pour toutes les occasions.
@@ -63,7 +62,17 @@
                 et pâtisseries qui sont tout aussi décorés.</p>
         </article> 
     </main>
-    <footer>
+    <div class="dropdown">
+        <button class="mainmenubtn">MENU</button>
+        <div class="dropdown-child">
+          <a href="#">Mariage</a>
+          <a href="#">Anniversaire</a>
+          <a href="#">Enfants</a>
+          <a href="#">Macarones</a>
+          <a href="#">Gateaux</a>
+        </div>
+    </div> 
+    <footer id="footer" class="footer">
         Copyright &copy; 
         <p>tel:</p>
     </footer>    

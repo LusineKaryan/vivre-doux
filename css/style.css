@@ -11,37 +11,71 @@ body{
    margin-left: 40px;
    padding: 0px;
  }
- 
- nav {
-   width: 50%;
- }
- 
- ul {
+
+  #bandeau{
+   background-image: url(../images/image3.jpg);
+   height: 300px;
+   background-size: cover;
    display: flex;
-   flex-direction: row;
-   list-style: none;
-   justify-content: space-between;
+   align-items: flex-start;
+   padding: 0;
+}
+ .dws-menu{
+   margin: 0;
+   padding: 0;
  }
  
- li {
-   width: 80px;
-   height: 20px;
-   padding: 10px;
+ .dws-menu ul{
+   list-style: none;
+ }
+ .dws-menu > ul {
+   display: flex;
+ }
+ 
+ .dws-menu > ul li {
+   position: relative;
+   width:110px;
+   height: 15px;
+   padding: 12px 5px 10px 0;
    border-radius: 10px;
    background-color:#EFE7ED;
    border: 1px solid #807E7E;
    text-align: center;
+   }
    
- }
- #bandeau {
-   background-image: url(../images/image3.jpg);
-   height: 30%;
-   background-size: cover;
-   display: flex;
-   align-items: flex-end;
-   padding: 0 10px;
-}
+   .dws-menu > ul li a{
+     display: block;
+     font-size: 13px;
+     text-decoration: none;
+     text-transform: uppercase;
+     color:rgb(133, 25, 116) ;
+   }
+
+   .dws-menu > ul li > a i .fa{
+     position: absolute;
+     left: 10px;
+     font-size: 18px;
+   }
  
+   .dws-menu li ul li{
+     border-radius: 0px;
+   }
+   
+   .dws-menu li ul{
+     position: absolute;
+     min-width: 150px;
+     display: none;
+   }
+
+   .dws-menu li > ul li a{
+     text-transform: none;
+   }
+
+   .dws-menu li:hover>ul{
+     display: block;
+   }
+  
+
  main {
      display: flex;
      flex-direction: row;
@@ -64,45 +98,6 @@ body{
    width:70%;
  }
  
- a{
-   color:black;
-   text-decoration: none;
- }
- a:visited{
-   color: rgb(173, 36, 148);
- }
- 
- .mainmenubtn {
-  background-color: rgb(199, 144, 199);
-  color: rgb(146, 28, 107);
-  border: none;
-  cursor: pointer;
-  padding: 10px 20px;
-  margin-bottom:240px;
-}
-
-.mainmenubtn:hover {
-  background-color: rgb(132, 177, 214);
-  }
-  
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-.dropdown-child {
-  display: none;
-  background-color:  rgb(223, 188, 223);
-  min-width: 200px;
-}
-.dropdown-child a {
-  color: rgb(43, 37, 37);
-  padding: 20px;
-  text-decoration: none;
-  display: block;
-}
-.dropdown:hover .dropdown-child {
-  display: block;
-}
 
  footer {
    margin-top: 10px;
@@ -119,19 +114,14 @@ body{
   }
 }
 
-@media screen and (min-width: 415px) and (max-width: 991px) 
-{
-  article
- {
+@media screen and (min-width: 415px) and (max-width: 960px){
+  article{
    width: 30%;
-  }
+  } 
 }
 
-@media screen and (min-width: 992px) 
-{
-  article
- {
+@media screen and (min-width: 961px){
+  article{
    width: 25%;
-  }
-    
+  }   
 }
