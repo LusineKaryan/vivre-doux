@@ -200,13 +200,40 @@ body{
    }
   
 
- main {
+  main {
      display: flex;
      flex-direction: row;
      flex-flow: wrap;
      justify-content: space-around;
    }
+   
+   h4{
+    color: #502b40;
+    text-align: center;
+   }
+
+  .flash{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+   }
+  
+  .qr_code{
+    background-image: url(../images/qr_code.png);
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+    margin-left: 80px;
+    }
  
+  ol li{
+    text-transform: uppercase;
+    line-height: 25px;
+    font-size: 12px;
+   }
+
   article {
    display: flex;
    flex-direction: column;
@@ -254,6 +281,13 @@ body{
   {
     width: 70%;
   }
+
+  .qr_code{
+    margin-left: 5px;
+    width: 80px;
+    height: 80px;
+    }
+ 
 }
 
 @media screen and (min-width: 481px) and (max-width: 960px){
