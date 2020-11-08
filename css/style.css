@@ -263,9 +263,40 @@ body{
 
  footer {
    margin-top: 10px;
-   height:40px;
+   height:70px;
    background-color: #F5DCDF;
    padding:20px;
+ }
+
+ .footer>p{
+   margin: 0 0 7px 0;
+ }
+ .nav{
+   display: flex;
+   justify-content: space-between;
+ }
+
+ .tel{
+  display: flex;
+ }
+
+ .tel p{
+   margin-top: 8px;
+ }
+
+ .tel ul{
+   list-style: none;
+   margin: 0;
+ }
+
+ .tel ul li a{
+   text-decoration: none;
+ }
+
+ .réseau_social{
+   display: flex;
+   justify-content: space-around;
+   line-height: 20px;
  }
 
 @media screen and (max-width: 480px){
