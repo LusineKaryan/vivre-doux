@@ -4,7 +4,7 @@ body{
   background-image: url(../images/fond1.jpg);
   background-size: cover;
  } 
- 
+
  html{
    box-sizing: border-box;
  }
@@ -331,15 +331,10 @@ body{
     footer{
       padding: 8px;
     }
-    .contact{
+    .nav .contact{
       display: flex;
       justify-content: space-between;
      }
-
-    .nav{
-      display: flex;
-      justify-content: space-between;
-    }
 }
 
 @media screen and (min-width: 481px) and (max-width: 960px){
