@@ -16,7 +16,7 @@ body{
    padding: 0px;
  }
 
-  #bandeau{
+ #bandeau{
    background-image: url(../images/image3.jpg);
    height: 50vh;
    background-size: cover;
