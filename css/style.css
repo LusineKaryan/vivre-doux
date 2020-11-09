@@ -3,8 +3,8 @@ body{
   padding: 0;
   background-image: url(../images/fond1.jpg);
   background-size: cover;
- }  
-
+ } 
+ 
  html{
    box-sizing: border-box;
  }
