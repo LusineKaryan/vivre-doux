@@ -3,36 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <title>Vivre-doux</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="shortcut icon" href="../images/logo3.png"/>
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet" />
 </head>
 <body>
-    <header>
-        <img id="logo" src="../images/logo3.png" alt="logo">
-        <div id="bandeau">
-        <nav>
-            <div class="hamburger-menu">
-                <input id="menu__toggle" type="checkbox" />
-                <label class="menu__btn" for="menu__toggle">
-                  <span></span>
-                </label>
-                <ul class="menu__box">
-                    <li><a class="menu__item" href="#"><i class="fas fa-fw fa-home"></i>Accueil</a></li>
-                    <li><a class="menu__item" href="#"><i class="fas fa-fw fa-briefcase"></i>Assortiment</a></li>
-                    <li><a class="menu__item" href="#"><i class="fas fa-fw fa-map-marker"></i>Contact</a></li>
-                    <li><a class="menu__item" href="#"><i class="fas fa-fw fa-gift"></i></i>Panier</a></li>
-                </ul>
-            </div>
-            <div class="col-sm-4">
-                <div class="dws-menu">
-                    <ul>
-                        <li><a href="#"><i class="fas fa-fw fa-home"></i>Accueil</a></li>
-                        <li><a href="#"><i class="fas fa-fw fa-briefcase"></i>Assortiment</a>
-                            <ul class="menu">
+    <header id="header" class="header">
+            <img id="logo" src="../images/logo3.png" alt="logo">  
+        <div id ="bandeau" class="container-fluid">
+            <nav>
+            <div class="row">
+                <div class="col-lg-3">
+                <div class="hamburger-menu">
+                    <input id="menu__toggle" type="checkbox" />
+                    <label class="menu__btn" for="menu__toggle">
+                      <span></span>
+                    </label>
+                    <ul class="menu__box">
+                        <li><a class="menu__item" href="#"><i class="fas fa-fw fa-home"></i>Accueil</a></li>
+                        <li><a class="menu__item" href="#"><i class="fas fa-fw fa-briefcase"></i>Assortiment</a>
+                            <ul class="submenu">
                                 <li><a href="#">Mariage</a></li>
                                 <li><a href="#">Anniversaire</a></li>
                                 <li><a href="#">Enfants</a>
@@ -46,14 +38,46 @@
                                 <li><a href="#">Gateaux</a></li>
                             </ul>
                         </li>
-                        <li><a href="#"><i class="fas fa-fw fa-map-marker"></i>Contact</a></li>
-                        <li><a href="#"><i class="fas fa-fw fa-gift"></i></i>Panier</a></li>
+                        <li><a class="menu__item" href="#"><i class="fas fa-fw fa-map-marker"></i>Contact</a></li>
+                        <li><a class="menu__item" href="#"><i class="fas fa-fw fa-gift"></i></i>Panier</a></li>
                     </ul>
-                </div>     
+                </div>
+                </div>
             </div>
-            
-        </nav>  
-    </header>    
+            <div class="row">
+                <div class="col-lg-5 ml-auto">
+                    <ul class="dws-menu d-flex justify-content-center animated fadeInDown">
+                        <li class="dws-menu__item">
+                            <a href="#"><i class="fas fa-fw fa-home"></i>Accueil</a>
+                        </li>
+                        <li class="dws-menu__item">
+                            <a href="#"><i class="fas fa-fw fa-briefcase"></i>Assortiment</a>
+                                <ul class="submenu">
+                                    <li><a href="#">Mariage</a></li>
+                                    <li><a href="#">Anniversaire</a></li>
+                                    <li><a href="#">Enfants</a>
+                                        <ul>
+                                            <li><a href="#">Bébé</a></li>
+                                            <li><a href="#">Garçon</a></li>
+                                            <li><a href="#">Fille</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Macarones</a></li>
+                                    <li><a href="#">Gateaux</a></li>
+                                </ul>
+                        </li>
+                        <li class="dws-menu__item">
+                            <a href="#"><i class="fas fa-fw fa-map-marker"></i>Contact</a>
+                        </li>
+                        <li class="dws-menu__item">
+                            <a href="#"><i class="fas fa-fw fa-gift"></i></i>Panier</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        </div>
+    </header>
     <main id="about" class="about">  
         <h4>Vous pouvez également passer vos commandes en utilisant notre code-QR</h4>
         <div class="flash">
@@ -68,32 +92,32 @@
             </div>
         </div>   
         <article>
-            <img id="gateau1" src="images/tort1.jpg" alt="gateau1">
+            <img id="gateau1" src="../images/tort1.jpg" alt="gateau1">
             <p>Des gâteaux pour toutes les occasions.
                 La production de confiserie "Vivre Doux" présente un large assortiment de gâteaux aussi bien pour les
                 gourmands que pour les gourmets raffinés.</p>
         </article>   
         <article>
-            <img id="gateau2" src="images/tort3.jpg" alt="gateau2">
+            <img id="gateau2" src="../images/tort3.jpg" alt="gateau2">
             <p>L'acheteur peut «concevoir» son propre gâteau à partir d'une vaste offre de divers gâteaux et garnitures.
                 Pour plus de commodité et d'originalité, en plus des grands gâteaux, nous vous proposons des petits gâteaux
                 et pâtisseries qui sont tout aussi décorés.</p>
         </article> 
         <article>
-            <img id="gateau3" src="images/tort4.png" alt="gateau3">
+            <img id="gateau3" src="../images/tort4.png" alt="gateau3">
             <p>L'acheteur peut «concevoir» son propre gâteau à partir d'une vaste offre de divers gâteaux et garnitures.
                 Pour plus de commodité et d'originalité, en plus des grands gâteaux, nous vous proposons des petits gâteaux
                 et pâtisseries qui sont tout aussi décorés.</p>
         </article>
         
         <article>
-            <img id="gateau4" src="images/tort8.jpg" alt="gateau4">
+            <img id="gateau4" src="../images/tort8.jpg" alt="gateau4">
             <p>Des gâteaux pour toutes les occasions.
                 La production de confiserie "Vivre Doux" présente un large assortiment de gâteaux aussi bien pour les
                 gourmands que pour les gourmets raffinés.</p>
         </article>
         <article>
-            <img id="gateau5" src="images/tort5.png" alt="gateau5">
+            <img id="gateau5" src="../images/tort5.png" alt="gateau5">
             <p>L'acheteur peut «concevoir» son propre gâteau à partir d'une vaste offre de divers gâteaux et garnitures.
                 Pour plus de commodité et d'originalité, en plus des grands gâteaux, nous vous proposons des petits gâteaux
                 et pâtisseries qui sont tout aussi décorés.</p>
