@@ -237,15 +237,14 @@ body{
     font-size: 12px;
    }
 
-  article {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   margin-top: 50px;
-   margin-left: 0;
-   padding: 20px;
-  
-   border: 2px solid #A97C9F;
+  .conteiner article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 0;
+    padding: 20px;
+    border: 2px solid #A97C9F;
  }
  
  #gateau1, #gateau2, #gateau3, #gateau4, #gateau5{
