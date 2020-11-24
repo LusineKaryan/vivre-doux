@@ -24,3 +24,41 @@ body{
    padding-top: 20px;
 }
 
+.row{
+
+}
+
+
+
+
+.dws-menu {
+
+}
+
+.dws-menu__item {
+    font-size: 13px;
+    list-style: none;
+
+}
+
+.dws-menu__item a {
+  text-decoration: none;
+  background: pink;
+  color:red;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.submenu {
+
+}
+
+.submenu li {
+  list-style: none;
+
+}
+ .submenu li a{
+
+
+ }
+
