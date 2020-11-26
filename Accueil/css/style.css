@@ -23,6 +23,12 @@ html{
   padding-top: 20px;
 }
 
+h1 {
+  text-transform: uppercase;
+  color: #502b40;
+  text-align: center;
+}
+
 #menu__toggle {
   opacity: 0;
 }
