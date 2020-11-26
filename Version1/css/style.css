@@ -1,7 +1,7 @@
 body{
   margin: 0;
   padding: 0;
-  background-image: url(../images/fond1.jpg);
+  background-image: url(../../images/fond1.jpg);
   background-size: cover;
  } 
 
@@ -17,7 +17,7 @@ body{
  }
 
  #bandeau{
-   background-image: url(../images/image3.jpg);
+   background-image: url(../../images/image3.jpg);
    height: 50vh;
    background-size: cover;
    display: flex;
@@ -225,7 +225,7 @@ body{
    }
   
   .qr_code{
-    background-image: url(../images/qr_code.png);
+    background-image: url(../../images/qr_code.png);
     background-size: cover;
     height: 100px;
     width: 100px;

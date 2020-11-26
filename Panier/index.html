@@ -7,12 +7,14 @@
     <title>Vivre-doux</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="shortcut icon" href="../images/logo3.png"/>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet" />
 </head>
 <body>
     <header id="header" class="header">
         <img id="logo" src="../images/logo3.png" alt="logo">
-        <div id ="bandeau" class="container-fluid">     
+        <div id ="bandeau" class="container-fluid">    
+            <h2>Quand la qualité rencontre le goût</h2>     
         <nav>
             <div class="row">
                 <div class="col-2">
@@ -22,7 +24,7 @@
                       <span></span>
                     </label>
                     <ul class="menu__box">
-                        <li><a class="menu__item" href="#"><i class="fas fa-fw fa-home"></i>Accueil</a></li>
+                        <li><a class="menu__item" href="../Accueil/index.html"><i class="fas fa-fw fa-home"></i>Accueil</a></li>
                         <li><a class="menu__item" href="#"><i class="fas fa-fw fa-briefcase"></i>Assortiment</a>
                             <ul>
                                 <li><a href="#">Mariage</a></li>
@@ -46,7 +48,7 @@
                 <div class="dws-menu col-10 ml-auto">
                     <ul class="ul d-flex justify-content-end align-items-start">
                         <li>
-                            <a href="#"><i class="fas fa-fw fa-home"></i>Accueil</a>
+                            <a href="../Accueil/index.html"><i class="fas fa-fw fa-home"></i>Accueil</a>
                         </li>
                         <li>
                             <a href="#"><i class="fas fa-fw fa-briefcase"></i>Assortiment</a>
@@ -76,7 +78,18 @@
         </nav>
         </div>
     </header>
-   
+
+    <div id="erreur">
+        <p>Pour passer une commande ou laisser un avis, vous pouvez vous inscrire sur notre site Web</p>
+    </div>
+    
+    <form>
+        <label for="pseudo">Pseudonyme</label> <input type="text" id="pseudo" class="champ" /><br />
+        <label for="mdp">Mot de passe</label> <input type="password" id="mdp" class="champ" /><br />
+        <label for="confirmation">Confirmation</label>  <input type="password" id="confirmation" class="champ" /><br />
+        <label for="mail">E-mail</label> <input type="text" id="mail" class="champ" /><br />
+        <input type="submit" id="envoi" value="Envoyer" /> <input type="reset" id="rafraichir" value="Rafraîchir" /><br />
+    </form>
     
     <footer id="footer" class="footer">
         <div class="row d-flex justify-content-around">
@@ -100,8 +113,8 @@
                 </div>
             </div>
             <div class="réseau_social col-3 d-flex justify-content-center">
-                <a href="https://www.facebook.com/"><img src="../images/icon_f.png" alt="facebbok"></a>
-                <a href="#"><img src="../images/icon_t.png" alt="twitter"></a>
+                <a href="https://www.facebook.com/help/?helpref=hc_global_nav&rdrhc"><img src="../images/icon_f.png" alt="facebbok"></a>
+                <a href="https://help.twitter.com/fr"><img src="../images/icon_t.png" alt="twitter"></a>
                 <a href="#"><img src="../images/icon_i.png" alt="instagram"></a>
             </div>
             
