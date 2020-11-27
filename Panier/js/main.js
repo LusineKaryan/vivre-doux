@@ -54,7 +54,7 @@ $(document).ready(function(){
             borderColor : '#ccc',
             color : '#555'
         });
-        $erreur.css('display', 'none'); // on prend soin de cacher le message d'erreur
+        $erreur.css('display', ''); // on prend soin de cacher le message d'erreur
     });
 
     function verifier(champ){
@@ -68,3 +68,5 @@ $(document).ready(function(){
     }
 
 });
+
+

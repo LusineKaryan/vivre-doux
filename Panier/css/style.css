@@ -59,10 +59,8 @@ body{
     position: fixed;
     top: 30px;
     left: 30px;
-  
     width: 26px;
     height: 26px;
-  
     cursor: pointer;
     z-index: 1;
   }
@@ -72,18 +70,17 @@ body{
   .menu__btn > span::after {
     display: block;
     position: absolute;
-  
     width: 100%;
     height: 2px;
-  
     background-color: #616161;
-  
     transition-duration: .3s;
   }
+
   .menu__btn > span::before {
     content: '';
     top: -8px;
   }
+
   .menu__btn > span::after {
     content: '';
     top: 8px;
@@ -251,16 +248,39 @@ body{
     right: -150px;
     top: -1px;
   }
+
+  .panier{
+    padding-top:6px;
+    color:rgb(133, 25, 116);
+  }
+
+  .commande{
+    color:rgb(133, 25, 116);
+  }
+
+  .commande button{
+    border: 1px solid #807E7E;
+    border-radius: 5px;
+    background-color:#dad5d8;
+    color:rgb(121, 23, 106);
+  }
+
+  .commande button:hover{
+    background: #c9c5c5;
+    box-shadow: 2px 10px 10px -5px black;
+    transition: all 0.5s ease;
+  }
   
   #erreur {
     display: flex;
+    padding: 30px 0 10px 50px;
   }
-  
+
   footer {
-    
     height:90px;
     background-color: #F5DCDF;
-    padding:10px 20px 20px 20px;
+    padding:10px 20px 10px 20px;
+    margin-top: 30px;
   }
   
   .mail p{
@@ -279,14 +299,22 @@ body{
   
   .list ul li a{
     text-decoration: none;
+    font-family:Arial, Helvetica, sans-serif ;
   }
   
   .réseau_social a{
     padding: 5px 2px;
   }
   
-  @media screen and (max-width: 576px){
+  @media screen and (max-width: 575px){
     .dws-menu{
       display: none;
+    }
+    .panier {
+    position: relative;
+    height: auto !important;
+    line-height: 30px !important;
+    text-align: center;
+    left: -30px;
     }
   }
