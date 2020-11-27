@@ -29,6 +29,8 @@ body{
     text-align: right;
     margin: 8px 60px 40px 0;
     font-family: 'Dancing Script', cursive;
+    opacity: 70%;
+    text-shadow: rgb(150, 135, 144) 8px 6px 4px;
   }
 
   #menu__toggle {
@@ -176,8 +178,8 @@ body{
   
   .dws-menu > ul li {
   position: relative;
-  width: 105px;
-  margin-right: 4%;
+  width: 110px;
+  margin-right: 3%;
   text-align: center;
   border: 1px solid #807E7E;
   border-radius: 10px;
@@ -187,7 +189,7 @@ body{
   
   .dws-menu > ul li a{
     display: block;
-    font-size: 12px;
+    font-size: 11px;
     text-decoration: none;
     text-transform: uppercase;
     color:rgb(133, 25, 116);
@@ -256,7 +258,7 @@ body{
   
   footer {
     
-    height:70px;
+    height:90px;
     background-color: #F5DCDF;
     padding:10px 20px 20px 20px;
   }
