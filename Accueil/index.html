@@ -5,80 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <title>Vivre-doux</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="shortcut icon" href="../images/logo3.png"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet" />
 </head>
 <body>
-    <header id="header" class="header">
-        <img id="logo" src="../images/logo3.png" alt="logo">
-        <div id ="bandeau" class="container-fluid"> 
-            <h2>Quand la qualité rencontre le goût</h2>    
-        <nav>
-            <div class="row">
-                <div class="col-2">
-                <div class="hamburger-menu">
-                    <input id="menu__toggle" type="checkbox" />
-                    <label class="menu__btn" for="menu__toggle">
-                      <span></span>
-                    </label>
-                    <ul class="menu__box">
-                        <li><a class="menu__item" href="#"><i class="fas fa-fw fa-home"></i>Accueil</a></li>
-                        <li><a class="menu__item" href="#"><i class="fas fa-fw fa-briefcase"></i>Assortiment</a>
-                            <ul>
-                                <li><a href="#">Mariage</a></li>
-                                <li><a href="#">Anniversaire</a></li>
-                                <li><a href="#">Enfants</a>
-                                    <ul>
-                                        <li><a href="#">Bébé</a></li>
-                                        <li><a href="#">Garçon</a></li>
-                                        <li><a href="#">Fille</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Macarones</a></li>
-                                <li><a href="#">Gateaux</a></li>
-                            </ul>
-                        </li>
-                        <li><a class="menu__item" href="#"><i class="fas fa-fw fa-map-marker"></i>Contact</a></li>
-                        <li><a class="menu__item" href="../Panier/index.html"><i class="fas fa-fw fa-gift"></i></i>Panier</a></li>
-                    </ul>   
-                </div>
-                </div>
-                <div class="dws-menu col-10 ml-auto">
-                    <ul class="ul d-flex justify-content-end align-items-start">
-                        <li>
-                            <a href="#"><i class="fas fa-fw fa-home"></i>Accueil</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fas fa-fw fa-briefcase"></i>Assortiment</a>
-                                <ul>
-                                    <li><a href="#">Mariage</a></li>
-                                    <li><a href="#">Anniversaire</a></li>
-                                    <li><a href="#">Enfants</a>
-                                        <ul>
-                                            <li><a href="#">Bébé</a></li>
-                                            <li><a href="#">Garçon</a></li>
-                                            <li><a href="#">Fille</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Macarones</a></li>
-                                    <li><a href="#">Gateaux</a></li>
-                                </ul>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fas fa-fw fa-map-marker"></i>Contact</a>
-                        </li>
-                        <li>
-                            <a href="../Panier/index.html"><i class="fas fa-fw fa-gift"></i></i>Panier</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-custom navbar-light" style="background-color: rgb(236, 230, 234);"> 
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img src="../images/logo3.png" width="130"></a>
+        
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item active">
+                <a class="nav-link" style="color: rgb(133, 25, 116);" href="#">Accueil<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Assortiment</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../Accueil/panier.html">Panier</a>
+              </li>
+            </ul>
+          </div>
         </nav>
-        </div>
     </header>
+
+   <div class="conteiner-fluid">
+        <div id ="bandeau"> 
+        <h2>Quand la qualité rencontre le goût</h2>    
+    </div>
+   
     <main id="about" class="about">  
         <h5>Vous pouvez également passer vos commandes en utilisant notre code-QR</h5>
         <div class="flash">
@@ -156,7 +119,7 @@
     </div> 
     <div class="comment">
         <p>Commentaires: ( )</p>
-        <a class="avis" href="../Panier/index.html">Ajouter un commentaire</a>
+        <a class="avis" href="../Accueil/panier.html">Ajouter un commentaire</a>
     </div>
     <footer id="footer" class="footer">
         <div class="row d-flex justify-content-around">

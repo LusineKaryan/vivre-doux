@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <title>Vivre-doux</title>
+    <link rel="shortcut icon" href="../images/logo3.png"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-custom navbar-light" style="background-color: rgb(236, 230, 234);"> 
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img src="../images/logo3.png" width="130"></a>
+        
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item active">
+                <a class="nav-link" style="color: rgb(133, 25, 116);" href="../Accueil/index.html">Accueil<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Assortiment</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Panier</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+    </header>
+
+   <div class="conteiner-fluid">
+        <div id ="bandeau"> 
+        <h2>Quand la qualité rencontre le goût</h2>    
+    </div>
+    
+    <div class="row">
+        <div class="panier col-12 col-sm-3 d-flex justify-content-center" style="height: 100px; line-height: 100px;">
+        <img  src="../images/tort1.jpg" style="width: 90px; height: 90px;  " />
+        </div>
+        <div class="panier col-12 col-sm-3" style="height: 100px; line-height: 100px;">
+            Nom
+        </div>
+        <div class="panier col-12 col-sm-2" style="height: 100px; line-height: 100px;">
+            Prix
+        </div>
+        <div class="panier col-12 col-sm-2 col-lg-2" style="height: 100px; line-height: 100px;">
+            Quantité
+        </div>
+        <div class="panier col-12 col-sm-2 col-lg-2" style="height: 100px; line-height: 100px;">
+            Supprimer
+        </div>
+        </div>
+        <hr>
+        <div class="commande" style="width: 100%; text-align: right;">
+            <div  float: right; margin-right: 20px;>
+            <p>Sous-total: (  article)</p> 
+            <button>Passer la commande</button>
+            </div>
+        </div>
+    
+        <div id="erreur" class="col-12">
+            <p>Pour passer une commande ou laisser un avis, vous pouvez vous inscrire sur notre site Web</p>
+        </div>
+    <div class="conteiner">
+        <div class="row">
+            <div class="col-4 d-flex justify-content-end"><label for="pseudo">Votre nom</label></div><div class="col-8"><input type="text" id="pseudo" class="champ" /></div> 
+            <div class="col-4 d-flex justify-content-end"><label for="mail">Votre e-mail</label></div> <div class="col-8"><input type="text" id="mail" class="champ" /></div>
+            <div class="col-4 d-flex justify-content-end"><label for="mdp">Mot de passe</label> </div><div class="col-8"><input type="password" id="mdp" class="champ" /></div>
+            <div class="col-4 d-flex justify-content-end"><label for="confirmation">Confirmation</label></div><div class="col-8"><input type="password" id="confirmation" class="champ" /></div>
+            <div class="col-4 d-flex justify-content-end"><input type="submit" id="envoi" value="Envoyer" /></div><div class="col-8"><input type="reset" id="rafraichir" value="Rafraîchir" /></div>
+        </div>
+    </div>
+    <footer id="footer" class="footer">
+        <div class="row d-flex justify-content-around">
+            <div class="contact col-5">
+                <div class="mail">
+                    <p>mail: vivredoux@gmail.fr</p>
+                </div>
+                <div class="site">
+                    <a href="#">www.vivredoux.com</a>
+                </div>
+            </div>
+            <div class="tel d-flex flex-direction-column col-4">
+                <div>
+                    <p>tel:</p>
+                </div>
+                <div class="list">
+                    <ul>
+                        <li><a href="#">0143778547</a></li>
+                        <li><a href="#">0143551348</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="réseau_social col-3 d-flex justify-content-center">
+                <a href="https://www.facebook.com/help/?helpref=hc_global_nav&rdrhc"><img src="../images/icon_f.png" alt="facebbok"></a>
+                <a href="https://help.twitter.com/fr"><img src="../images/icon_t.png" alt="twitter"></a>
+                <a href="#"><img src="../images/icon_i.png" alt="instagram"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>    
+    <script src="js/main.js"></script>
+</body> 
