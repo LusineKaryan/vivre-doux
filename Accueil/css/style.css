@@ -1,53 +1,44 @@
 body{
-  margin: 0;
-  padding: 0;
   background-image: url(../../images/fond1.jpg);
   background-size: cover;
   font-family: Georgia, 'Times New Roman', Times, serif;
  } 
 
-html{
+ html, body {
+  margin: 0;
+  padding: 0;
+}
+
+*, *:before, *:after {
   box-sizing: border-box;
 }
- 
-.navbar-brand{
- 
-  height: auto;
-  padding: 0px;
-}
+
 
 #bandeau{
   background-image: url(../../images/image3.jpg);
   height: 50vh;
   background-size: cover;
-  padding-top: 20px;
+  margin-top: 80px;
 }
 
 h2 {
   color: #962665;
   text-align: right;
-  margin: 8px 60px 40px 0;
   font-family: 'Dancing Script', cursive;
   opacity: 80%;
   text-shadow: rgb(150, 135, 144) 8px 6px 4px;
+  padding: 10px 40px;
 }
 
-.navbar{
-  top: 0;
-}
-
-.navbar-nav{
-  position: fixed;
-}
-
-.nav-link {
+.navbar-custom .navbar-nav .nav-link {
   font-size: 14px;
   text-decoration: none;
   text-transform: uppercase;
-  color:rgb(133, 25, 116);
+  padding: 1rem 1rem;
 }
 
-.nav-link:hover{
+
+.navbar-custom .navbar-nav .nav-link:hover{
   color: #502b40;
 }
 
@@ -140,37 +131,38 @@ padding:6px 10px;
   background: #cfcace;
   box-shadow: 2px 10px 10px -5px black;
   transition: all 0.5s ease;
-  }
+}
 
-  .panier{
-    padding-top:6px;
-    color:rgb(133, 25, 116);
-  }
+.panier{
+  padding-top:10px;
+  color:rgb(133, 25, 116);
+}
 
-  .commande{
-    color:rgb(133, 25, 116);
-  }
+.commande{
+  color:rgb(133, 25, 116);
+}
 
-  .commande button{
-    border: 1px solid #807E7E;
-    border-radius: 5px;
-    background-color:#dad5d8;
-    color:rgb(121, 23, 106);
-  }
+.commande p{
+  margin-right: 40px;
+}
+.commande button{
+  border: 1px solid #807E7E;
+  border-radius: 5px;
+  background-color:#dad5d8;
+  color:rgb(121, 23, 106);
+  margin-right: 40px;
+}
 
-  .commande button:hover{
-    background: #c9c5c5;
-    box-shadow: 2px 10px 10px -5px black;
-    transition: all 0.5s ease;
-  }
-  
-  #erreur {
-    display: flex;
-    padding: 30px 0 10px 50px;
-  }
+.commande button:hover{
+  background: #c9c5c5;
+  box-shadow: 2px 10px 10px -5px black;
+  transition: all 0.5s ease;
+}
 
-
-
+#erreur {
+  display: flex;
+  padding: 30px 0 10px 50px;
+}
 
 footer {
   height:90px;
@@ -202,8 +194,3 @@ footer {
   padding: 5px 2px;
 }
 
-@media screen and (max-width: 576px){
-  .dws-menu{
-    display: none;
-  }
-}

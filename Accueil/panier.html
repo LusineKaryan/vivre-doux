@@ -11,20 +11,28 @@
     <link href="css/style.css" rel="stylesheet" />
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-custom navbar-light" style="background-color: rgb(236, 230, 234);"> 
+    <header class="header">
+        <nav class="navbar fixed-top navbar-expand-md navbar-custom navbar-light" style="background-color: rgb(236, 230, 234);"> 
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <a class="navbar-brand" href="#"><img src="../images/logo3.png" width="130"></a>
-        
           <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
               <li class="nav-item active">
                 <a class="nav-link" style="color: rgb(133, 25, 116);" href="../Accueil/index.html">Accueil<span class="sr-only">(current)</span></a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Assortiment</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Assortiment
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: rgb(236, 230, 234);" >
+                  <a class="dropdown-item" href="#">Mariage</a>
+                  <a class="dropdown-item" href="#">Anniversaire</a>
+                  <a class="dropdown-item" href="#">Enfants</a>
+                  <a class="dropdown-item" href="#">Macarones</a>
+                  <a class="dropdown-item" href="#">Gateaux</a>
+                </div>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Contact</a>
@@ -36,35 +44,33 @@
           </div>
         </nav>
     </header>
-
-   <div class="conteiner-fluid">
+   <div class="conteiner">
         <div id ="bandeau"> 
         <h2>Quand la qualité rencontre le goût</h2>    
     </div>
-    
     <div class="row">
-        <div class="panier col-12 col-sm-3 d-flex justify-content-center" style="height: 100px; line-height: 100px;">
+        <div class="panier col-12 d-flex justify-content-center col-sm-3" style="height: 100px; line-height: 100px;">
         <img  src="../images/tort1.jpg" style="width: 90px; height: 90px;  " />
         </div>
-        <div class="panier col-12 col-sm-3" style="height: 100px; line-height: 100px;">
+        <div class="panier col-12 d-flex justify-content-center col-sm-3" style="height: 100px; line-height: 100px;">
             Nom
         </div>
-        <div class="panier col-12 col-sm-2" style="height: 100px; line-height: 100px;">
+        <div class="panier col-12 d-flex justify-content-center col-sm-2" style="height: 100px; line-height: 100px;">
             Prix
         </div>
-        <div class="panier col-12 col-sm-2 col-lg-2" style="height: 100px; line-height: 100px;">
+        <div class="panier col-12 d-flex justify-content-center col-sm-2" style="height: 100px; line-height: 100px;">
             Quantité
         </div>
-        <div class="panier col-12 col-sm-2 col-lg-2" style="height: 100px; line-height: 100px;">
+        <div class="panier col-12  d-flex justify-content-center col-sm-2" style="height: 100px; line-height: 100px;">
             Supprimer
         </div>
-        </div>
+    </div>
         <hr>
         <div class="commande" style="width: 100%; text-align: right;">
-            <div  float: right; margin-right: 20px;>
+            
             <p>Sous-total: (  article)</p> 
             <button>Passer la commande</button>
-            </div>
+            
         </div>
     
         <div id="erreur" class="col-12">

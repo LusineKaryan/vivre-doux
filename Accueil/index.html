@@ -11,21 +11,30 @@
     <link href="css/style.css" rel="stylesheet" />
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-custom navbar-light" style="background-color: rgb(236, 230, 234);"> 
+    <header class="header">
+        <nav class="navbar fixed-top navbar-expand-md navbar-custom navbar-light" style="background-color: rgb(236, 230, 234);"> 
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <a class="navbar-brand" href="#"><img src="../images/logo3.png" width="130"></a>
-        
           <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
               <li class="nav-item active">
                 <a class="nav-link" style="color: rgb(133, 25, 116);" href="#">Accueil<span class="sr-only">(current)</span></a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Assortiment</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Assortiment
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: rgb(236, 230, 234);" >
+                  <a class="dropdown-item" href="#">Mariage</a>
+                  <a class="dropdown-item" href="#">Anniversaire</a>
+                  <a class="dropdown-item" href="#">Enfants</a>
+                  <a class="dropdown-item" href="#">Macarones</a>
+                  <a class="dropdown-item" href="#">Gateaux</a>
+                </div>
               </li>
+             
               <li class="nav-item">
                 <a class="nav-link" href="#">Contact</a>
               </li>
@@ -36,12 +45,9 @@
           </div>
         </nav>
     </header>
-
-   <div class="conteiner-fluid">
-        <div id ="bandeau"> 
-        <h2>Quand la qualité rencontre le goût</h2>    
-    </div>
-   
+        <div id ="bandeau" class="conteinerfluid"> 
+            <h2>Quand la qualité rencontre le goût</h2>    
+        </div>
     <main id="about" class="about">  
         <h5>Vous pouvez également passer vos commandes en utilisant notre code-QR</h5>
         <div class="flash">
