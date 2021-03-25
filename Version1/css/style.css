@@ -337,11 +337,25 @@ body{
      }
 }
 
-@media screen and (min-width: 481px) and (max-width: 960px){
+@media screen and (max-width: 480px){
   .menu__box{
     display: none;
   }
 
+  .menu__btn{
+    display: none;
+  }
+  
+  .dws-menu > ul li {
+    margin: 6px;
+  }
+  article{
+   width: 45%;
+  } 
+}
+
+@media screen and (min-width: 481px) and (max-width: 960px){
+ 
   .menu__btn{
     display: none;
   }
